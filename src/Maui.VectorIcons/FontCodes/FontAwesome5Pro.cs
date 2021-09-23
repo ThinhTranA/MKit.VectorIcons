@@ -1,6 +1,6 @@
 using System;
 
-namespace FontAwesome
+namespace VectorIcons
 {
     /// <summary>
     /// The unicode values for all FontAwesome icons.
@@ -18,7 +18,7 @@ namespace FontAwesome
         /// <para/>
         /// See $link$
         /// </summary>
-        public const string FiveHundredPX = "\uf26e";
+        public const string FiveHundredPx = "\uf26e";
 
         /// <summary>
         /// fa-abacus unicode value ("\uf640").
@@ -6417,7 +6417,7 @@ namespace FontAwesome
         /// <para/>
         /// See $link$
         /// </summary>
-        public const string Equal = "\uf52c";
+        public const string Equals = "\uf52c";
 
         /// <summary>
         /// fa-eraser unicode value ("\uf12d").

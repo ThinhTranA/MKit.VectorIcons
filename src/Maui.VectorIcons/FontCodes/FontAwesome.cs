@@ -1,6 +1,6 @@
 using System;
 
-namespace FontAwesome
+namespace VectorIcons
 {
     /// <summary>
     /// The unicode values for all FontAwesome icons.
@@ -5949,7 +5949,7 @@ namespace FontAwesome
         /// <para/>
         /// See $link$
         /// </summary>
-        public const string FiveHundredPX = "\uf26e";
+        public const string FiveHundredPx = "\uf26e";
 
         /// <summary>
         /// fa-amazon unicode value ("\uf270").

@@ -1,15 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Humanizer;
 
 namespace GlyphJsonToCsharp.Helpers
 {
     public static class DotNetNameHelper
     {
-        public static readonly IReadOnlyDictionary<string, string> DotNetNameMap = new Dictionary<string, string>()
-        {
-            { "500px", "FiveHundredPX"},
-            { "equals", "Equal"},
-        };
-
         public static string ToDotNetName(string name)
         {
             if (string.IsNullOrEmpty(name))
@@ -17,11 +13,11 @@ namespace GlyphJsonToCsharp.Helpers
                 return string.Empty;
             }
 
-            if (DotNetNameMap.ContainsKey(name))
+            if (Char.IsDigit(name[0]))
             {
-                return DotNetNameMap[name];
+                name = DigitsToDotnetName(name);
             }
-
+            
             var split = name.Split('-');
 
             string dotNetName = "";
@@ -31,6 +27,22 @@ namespace GlyphJsonToCsharp.Helpers
             }
 
             return dotNetName;
+        }
+
+        private static string DigitsToDotnetName(string name)
+        {
+            var i = 0;
+            while (Char.IsDigit(name[i]))
+            {
+                i++;
+                if(i >= name.Length)
+                    break;
+            }
+
+            var digits = int.Parse(name[..i]);
+            var digitsWords = digits.ToWords().Pascalize();
+            var remainWord = name[i..].FirstCharToUpper();
+            return digitsWords + remainWord;
         }
     }
 }

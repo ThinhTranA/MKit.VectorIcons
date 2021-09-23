@@ -1,6 +1,6 @@
 using System;
 
-namespace FontAwesome
+namespace VectorIcons
 {
     /// <summary>
     /// The unicode values for all FontAwesome icons.

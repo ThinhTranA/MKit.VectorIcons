@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GlyphJsonToCsharp.Helpers;
+using Humanizer;
 using Newtonsoft.Json;
 
 namespace GlyphJsonToCsharp
@@ -19,6 +20,8 @@ namespace GlyphJsonToCsharp
             var icons = JsonConvert.DeserializeObject<Dictionary<string, int>>(content);
             
             Console.Write("Generating C# code...");
+         //  var aa = "10k".ToWord();
+            
 
             var classTemplate = ReadResourceContent("ClassTemplate.txt");
             var propertyTemplate = ReadResourceContent("PropertyTemplate.txt");

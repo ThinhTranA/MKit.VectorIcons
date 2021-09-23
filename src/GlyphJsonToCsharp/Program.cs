@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using GlyphJsonToCsharp.Helpers;
+using Humanizer;
 
 namespace GlyphJsonToCsharp
 {
@@ -12,7 +13,7 @@ namespace GlyphJsonToCsharp
             var glyphDir = Directory.GetDirectories(Directory.GetCurrentDirectory()).First(x => x.EndsWith("GlyphMaps"));
             var files = Directory.GetFiles(glyphDir);
             var exportPath = AssemblyHelper.EntryAssemblyDirectory;
-
+            
             var codeWrite = new CodeWriter();
 
             foreach (var file in files)
