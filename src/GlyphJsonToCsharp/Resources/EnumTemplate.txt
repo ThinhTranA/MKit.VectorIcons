@@ -1,0 +1,12 @@
+using System;
+
+namespace VectorIcons
+{
+    /// <summary>
+    /// MAUI Vector Icons. $class$
+    /// </summary>
+    public enum $class$
+    {
+$properties$
+    }
+}

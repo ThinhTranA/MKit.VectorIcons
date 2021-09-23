@@ -60,6 +60,10 @@
       <None Update="GlyphMaps\Zocial.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+      <None Remove="Resources\EnumPropertyTemplate.txt" />
+      <EmbeddedResource Include="Resources\EnumPropertyTemplate.txt" />
+      <None Remove="Resources\EnumTemplate.txt" />
+      <EmbeddedResource Include="Resources\EnumTemplate.txt" />
     </ItemGroup>
 
 </Project>

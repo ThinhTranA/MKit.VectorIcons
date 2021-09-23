@@ -16,7 +16,7 @@
         Text="Vector Icons font"
         TextColor="White" />
     </Frame>
-    <Label FontFamily="{x:Static vectorIcons:FontFamily.AntDesign}" Text="{x:Static vectorIcons:AntDesignFont.Addfolder}" />
+    <!--<Label FontFamily="{x:Static vectorIcons:FontFamily.AntDesign}" Text="{x:Static vectorIcons:AntDesignFont.Addfolder}" />
     <Label FontFamily="{x:Static vectorIcons:FontFamily.Entypo}" Text="{x:Static vectorIcons:EntypoFont.Address}" />
     <Label FontFamily="{x:Static vectorIcons:FontFamily.Feather}" Text="{x:Static vectorIcons:FeatherFont.Activity}" />
 
@@ -28,12 +28,12 @@
     <Label FontFamily="{x:Static vectorIcons:FontFamily.Foundation}" Text="{x:Static vectorIcons:FoundationFont.Bluetooth}" />
     <Label FontFamily="{x:Static vectorIcons:FontFamily.Ionicons}" Text="{x:Static vectorIcons:IoniconsFont.Albums}" />
 
-    <!--  TODO: Not working  -->
+    ~1~  TODO: Not working  @1@
     <Label FontFamily="{x:Static vectorIcons:FontFamily.MaterialCommunityIcons}" Text="{x:Static vectorIcons:MaterialCommunityIconsFont.Airbag}" />
 
     <Label FontFamily="{x:Static vectorIcons:FontFamily.Octicons}" Text="{x:Static vectorIcons:OcticonsFont.FileMedia}" />
     <Label FontFamily="{x:Static vectorIcons:FontFamily.SimpleLineIcons}" Text="{x:Static vectorIcons:SimpleLineIconsFont.FolderAlt}" />
-    <Label FontFamily="{x:Static vectorIcons:FontFamily.Zocial}" Text="{x:Static vectorIcons:ZocialFont.Bitcoin}" />
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.Zocial}" Text="{x:Static vectorIcons:ZocialFont.Bitcoin}" />-->
   </StackLayout>
 
 </ContentPage>

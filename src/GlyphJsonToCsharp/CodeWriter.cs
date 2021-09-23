@@ -23,8 +23,8 @@ namespace GlyphJsonToCsharp
          //  var aa = "10k".ToWord();
             
 
-            var classTemplate = ReadResourceContent("ClassTemplate.txt");
-            var propertyTemplate = ReadResourceContent("PropertyTemplate.txt");
+            var classTemplate = ReadResourceContent("EnumTemplate.txt");
+            var propertyTemplate = ReadResourceContent("EnumPropertyTemplate.txt");
 
             var properties = new List<string>();
 

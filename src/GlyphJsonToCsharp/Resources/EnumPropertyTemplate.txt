@@ -1,0 +1,4 @@
+        /// <summary>
+        /// $name$ unicode value ("\u$code$").
+        /// </summary>
+        $dotnet_name$ = '\u$code$',
