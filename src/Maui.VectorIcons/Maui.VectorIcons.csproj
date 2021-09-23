@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\AntDesign.ttf" />
+    <EmbeddedResource Include="Fonts\AntDesign.ttf" />
+    <None Remove="Fonts\Entypo.ttf" />
+    <EmbeddedResource Include="Fonts\Entypo.ttf" />
+    <None Remove="Fonts\EvilIcons.ttf" />
+    <EmbeddedResource Include="Fonts\EvilIcons.ttf" />
+    <None Remove="Fonts\Feather.ttf" />
+    <EmbeddedResource Include="Fonts\Feather.ttf" />
+    <None Remove="Fonts\FontAwesome.ttf" />
+    <EmbeddedResource Include="Fonts\FontAwesome.ttf" />
+    <None Remove="Fonts\FontAwesome5_Brands.ttf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5_Brands.ttf" />
+    <None Remove="Fonts\FontAwesome5_Regular.ttf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5_Regular.ttf" />
+    <None Remove="Fonts\FontAwesome5_Solid.ttf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5_Solid.ttf" />
+    <None Remove="Fonts\Fontisto.ttf" />
+    <EmbeddedResource Include="Fonts\Fontisto.ttf" />
+    <None Remove="Fonts\Foundation.ttf" />
+    <EmbeddedResource Include="Fonts\Foundation.ttf" />
+    <None Remove="Fonts\Ionicons.ttf" />
+    <EmbeddedResource Include="Fonts\Ionicons.ttf" />
+    <None Remove="Fonts\MaterialCommunityIcons.ttf" />
+    <EmbeddedResource Include="Fonts\MaterialCommunityIcons.ttf" />
+    <None Remove="Fonts\MaterialIcons.ttf" />
+    <EmbeddedResource Include="Fonts\MaterialIcons.ttf" />
+    <None Remove="Fonts\Octicons.ttf" />
+    <EmbeddedResource Include="Fonts\Octicons.ttf" />
+    <None Remove="Fonts\SimpleLineIcons.ttf" />
+    <EmbeddedResource Include="Fonts\SimpleLineIcons.ttf" />
+    <None Remove="Fonts\Zocial.ttf" />
+    <EmbeddedResource Include="Fonts\Zocial.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
+  </ItemGroup>
+
+</Project>

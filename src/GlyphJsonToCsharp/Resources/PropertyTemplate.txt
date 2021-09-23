@@ -1,0 +1,8 @@
+﻿        /// <summary>
+        /// fa-$name$ unicode value ("\u$code$").
+        /// <para/>
+        /// This icon supports the following styles: $styles$
+        /// <para/>
+        /// See $link$
+        /// </summary>
+        public const string $dotnet_name$ = "\u$code$";
