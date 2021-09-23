@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.VectorIconsSample.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fontAwesome="clr-namespace:FontAwesome;assembly=Maui.VectorIcons"
+    xmlns:vectorIcons="clr-namespace:VectorIcons;assembly=Maui.VectorIcons">
+
+    <StackLayout>
+        <Frame
+            Padding="24"
+            BackgroundColor="#2196F3"
+            CornerRadius="0">
+            <Label
+                FontSize="36"
+                HorizontalTextAlignment="Center"
+                Text="Vector Icons font"
+                TextColor="White" />
+        </Frame>
+        <Label FontFamily="{x:Static vectorIcons:FontFamily.FontAwesome}" Text="{x:Static fontAwesome:FontAwesomeFont.MailReply}" />
+        <Label FontFamily="{x:Static vectorIcons:FontFamily.MaterialCommunityIcons}" Text="{x:Static fontAwesome:MaterialCommunityIconsFont.AccessPoint}" />
+        <Label FontFamily="{x:Static vectorIcons:FontFamily.Feather}" Text="{x:Static fontAwesome:FeatherFont.Activity}" />
+        <Label FontFamily="{x:Static vectorIcons:FontFamily.MaterialCommunityIcons}" Text="{x:Static fontAwesome:MaterialCommunityIconsFont.AccessPoint}" />
+    </StackLayout>
+
+</ContentPage>
