@@ -1,26 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="Maui.VectorIconsSample.MainPage"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:fontAwesome="clr-namespace:FontAwesome;assembly=Maui.VectorIcons"
-    xmlns:vectorIcons="clr-namespace:VectorIcons;assembly=Maui.VectorIcons">
+  x:Class="Maui.VectorIconsSample.MainPage"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:fontAwesome="clr-namespace:FontAwesome;assembly=Maui.VectorIcons"
+  xmlns:vectorIcons="clr-namespace:VectorIcons;assembly=Maui.VectorIcons">
 
-    <StackLayout>
-        <Frame
-            Padding="24"
-            BackgroundColor="#2196F3"
-            CornerRadius="0">
-            <Label
-                FontSize="36"
-                HorizontalTextAlignment="Center"
-                Text="Vector Icons font"
-                TextColor="White" />
-        </Frame>
-        <Label FontFamily="{x:Static vectorIcons:FontFamily.FontAwesome}" Text="{x:Static fontAwesome:FontAwesomeFont.MailReply}" />
-        <Label FontFamily="{x:Static vectorIcons:FontFamily.MaterialCommunityIcons}" Text="{x:Static fontAwesome:MaterialCommunityIconsFont.AccessPoint}" />
-        <Label FontFamily="{x:Static vectorIcons:FontFamily.Feather}" Text="{x:Static fontAwesome:FeatherFont.Activity}" />
-        <Label FontFamily="{x:Static vectorIcons:FontFamily.MaterialCommunityIcons}" Text="{x:Static fontAwesome:MaterialCommunityIconsFont.AccessPoint}" />
-    </StackLayout>
+  <StackLayout>
+    <Frame
+      Padding="24"
+      BackgroundColor="#2196F3"
+      CornerRadius="0">
+      <Label
+        FontSize="36"
+        HorizontalTextAlignment="Center"
+        Text="Vector Icons font"
+        TextColor="White" />
+    </Frame>
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.AntDesign}" Text="{x:Static fontAwesome:AntDesignFont.Addfolder}" />
+    <!--<Label FontFamily="{x:Static vectorIcons:FontFamily.Entypo}" Text="{x:Static fontAwesome:EntypoFont.}" />-->
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.Feather}" Text="{x:Static fontAwesome:FeatherFont.Activity}" />
+
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.FontAwesome}" Text="{x:Static fontAwesome:FontAwesomeFont.MailReply}" />
+
+    <!--  TODO: Not working  -->
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.FontAwesome5Brands}" Text="{x:Static fontAwesome:FontAwesome5FreeFont.Alipay}" />
+
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.Fontisto}" Text="{x:Static fontAwesome:FontistoFont.Airplay}" />
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.Foundation}" Text="{x:Static fontAwesome:FoundationFont.Bluetooth}" />
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.Ionicons}" Text="{x:Static fontAwesome:IoniconsFont.Albums}" />
+
+    <!--  TODO: Not working  -->
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.MaterialCommunityIcons}" Text="{x:Static fontAwesome:MaterialCommunityIconsFont.AccessPoint}" />
+
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.Octicons}" Text="{x:Static fontAwesome:OcticonsFont.FileMedia}" />
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.SimpleLineIcons}" Text="{x:Static fontAwesome:SimpleLineIconsFont.FolderAlt}" />
+    <Label FontFamily="{x:Static vectorIcons:FontFamily.Zocial}" Text="{x:Static fontAwesome:ZocialFont.Bitcoin}" />
+  </StackLayout>
 
 </ContentPage>
