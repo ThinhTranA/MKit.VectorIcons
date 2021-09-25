@@ -10,8 +10,6 @@ namespace GlyphJsonToCsharp
 {
     public class CodeWriter
     {
-        const string indent = "    ";
-
         public string Write(string jsonFile)
         {
             Console.Write("Reading json file");
@@ -20,8 +18,6 @@ namespace GlyphJsonToCsharp
             var icons = JsonConvert.DeserializeObject<Dictionary<string, int>>(content);
             
             Console.Write("Generating C# code...");
-         //  var aa = "10k".ToWord();
-            
 
             var classTemplate = ReadResourceContent("EnumTemplate.txt");
             var propertyTemplate = ReadResourceContent("EnumPropertyTemplate.txt");
@@ -31,12 +27,10 @@ namespace GlyphJsonToCsharp
             foreach (var icon in icons)
             {
                 var property = propertyTemplate
-                    //.Replace("$link$", icon.Url)
                     .Replace("$name$", icon.Key)
                     .Replace("$code$", icon.Value.ToString("X").ToLower())
                     .Replace("$dotnet_name$",  DotNetNameHelper.ToDotNetName(icon.Key));
-                        //               .Replace("$styles$", icon.StylesSummary);
-
+                
                 properties.Add(property);
             }
 

@@ -5,11 +5,19 @@
   xmlns="http://xamarin.com/schemas/2014/forms"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
   xmlns:antDesign="clr-namespace:Maui.VectorIcons.AntDesign;assembly=Maui.VectorIcons"
-  xmlns:fontAwesome="clr-namespace:Maui.VectorIcons.FontAwesome;assembly=Maui.VectorIcons">
+  xmlns:fontAwesome="clr-namespace:Maui.VectorIcons.FontAwesome;assembly=Maui.VectorIcons"
+  xmlns:materialIcons="clr-namespace:Maui.VectorIcons.MaterialIcons;assembly=Maui.VectorIcons">
   <ContentPage.Content>
     <StackLayout>
       <fontAwesome:Icon
-        Name="Amazon"
+        Name="StepForward"
+        FontSize="100"
+        HorizontalOptions="Center"
+        TextColor="Green"
+        VerticalOptions="CenterAndExpand" />
+
+      <materialIcons:Icon
+        Name="Agriculture"
         FontSize="100"
         HorizontalOptions="Center"
         TextColor="Green"
