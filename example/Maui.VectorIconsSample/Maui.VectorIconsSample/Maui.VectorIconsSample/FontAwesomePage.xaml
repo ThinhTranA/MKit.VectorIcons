@@ -17,7 +17,7 @@
         VerticalOptions="CenterAndExpand" />
 
       <materialIcons:Icon
-        Name="Agriculture"
+        Name="Android"
         FontSize="100"
         HorizontalOptions="Center"
         TextColor="Green"
