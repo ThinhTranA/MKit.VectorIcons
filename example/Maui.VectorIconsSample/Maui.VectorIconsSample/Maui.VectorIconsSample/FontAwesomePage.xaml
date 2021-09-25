@@ -6,11 +6,19 @@
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
   xmlns:antDesign="clr-namespace:Maui.VectorIcons.AntDesign;assembly=Maui.VectorIcons"
   xmlns:fontAwesome="clr-namespace:Maui.VectorIcons.FontAwesome;assembly=Maui.VectorIcons"
+  xmlns:fontAwesome5="clr-namespace:Maui.VectorIcons.FontAwesome5;assembly=Maui.VectorIcons"
   xmlns:materialIcons="clr-namespace:Maui.VectorIcons.MaterialIcons;assembly=Maui.VectorIcons">
   <ContentPage.Content>
     <StackLayout>
       <fontAwesome:Icon
         Name="StepForward"
+        FontSize="100"
+        HorizontalOptions="Center"
+        TextColor="Green"
+        VerticalOptions="CenterAndExpand" />
+
+      <fontAwesome5:Icon
+        Name="Pastafarianism"
         FontSize="100"
         HorizontalOptions="Center"
         TextColor="Green"
