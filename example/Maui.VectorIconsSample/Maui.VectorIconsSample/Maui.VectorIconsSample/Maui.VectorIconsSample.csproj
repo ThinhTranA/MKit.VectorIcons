@@ -11,11 +11,68 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\src\Maui.VectorIcons\Maui.VectorIcons.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Fonts\AntDesignPage.xaml.cs">
+      <DependentUpon>AntDesignPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\EntypoPage.xaml.cs">
+      <DependentUpon>EntypoPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\EvilIconsPage.xaml.cs">
+      <DependentUpon>EvilIconsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\FeatherPage.xaml.cs">
+      <DependentUpon>FeatherPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\FontAwesomePage.xaml.cs">
+      <DependentUpon>FontAwesomePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\FontAwesome5Page.xaml.cs">
+      <DependentUpon>FontAwesome5Page.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\FontistoPage.xaml.cs">
+      <DependentUpon>FontistoPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\FoundationPage.xaml.cs">
+      <DependentUpon>FoundationPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\IoniconsPage.xaml.cs">
+      <DependentUpon>IoniconsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\MaterialIconsPage.xaml.cs">
+      <DependentUpon>MaterialIconPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\OcticonsPage.xaml.cs">
+      <DependentUpon>OcticonsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\SimpleLineIconsPage.xaml.cs">
+      <DependentUpon>SimpleLineIconsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fonts\ZocialPage.xaml.cs">
+      <DependentUpon>ZocialPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

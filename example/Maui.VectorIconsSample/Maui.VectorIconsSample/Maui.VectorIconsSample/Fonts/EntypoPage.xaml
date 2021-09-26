@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+  x:Class="Maui.VectorIconsSample.Fonts.EntypoPage"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:antDesign="clr-namespace:Maui.VectorIcons.Entypo;assembly=Maui.VectorIcons"
+  Title="{Binding Title}">
+  <ContentPage.Content>
+    <StackLayout>
+      <SearchBar TextChanged="SearchBar_TextChanged" />
+      <CollectionView ItemsSource="{Binding Icons}">
+        <CollectionView.ItemTemplate>
+          <DataTemplate>
+            <Grid HeightRequest="48">
+              <StackLayout
+                Padding="16,0"
+                Orientation="Horizontal"
+                Spacing="12"
+                VerticalOptions="CenterAndExpand">
+                <antDesign:Icon Name="{Binding Name}" FontSize="24" />
+                <Label Text="{Binding IconName}" />
+              </StackLayout>
+              <BoxView
+                HeightRequest="1"
+                Opacity="0.3"
+                VerticalOptions="End"
+                Color="Gray" />
+            </Grid>
+          </DataTemplate>
+        </CollectionView.ItemTemplate>
+      </CollectionView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
