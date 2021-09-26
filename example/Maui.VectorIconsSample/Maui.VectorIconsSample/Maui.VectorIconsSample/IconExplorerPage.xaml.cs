@@ -1,18 +1,16 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Maui.VectorIconsSample
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FontAwesomePage : ContentPage
+    public partial class IconExplorerPage : ContentPage
     {
-        public FontAwesomePage()
+        public IconExplorerPage()
         {
             InitializeComponent();
         }

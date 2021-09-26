@@ -9,9 +9,8 @@ namespace Maui.VectorIconsSample
         public App()
         {
             InitializeComponent();
-            
+
             MainPage = new NavigationPage(new MainPage());
-            //MainPage = new FontAwesomePage();
         }
 
         protected override void OnStart()

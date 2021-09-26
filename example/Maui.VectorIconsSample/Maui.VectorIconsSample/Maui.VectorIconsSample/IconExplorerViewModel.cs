@@ -8,12 +8,12 @@ using Xamarin.Forms;
 
 namespace Maui.VectorIconsSample
 {
-    public class MainPageViewModel : BaseViewModel
+    public class IconExplorerViewModel : BaseViewModel
     {
         public List<IconSet> IconSets { get; set; }
         public Command<IconSet> ViewFontIconsCommand { get; set; }
         public INavigation Navigation => Application.Current.MainPage.Navigation;
-        public MainPageViewModel()
+        public IconExplorerViewModel()
         {
             IconSets = new List<IconSet>
             {
@@ -49,7 +49,7 @@ namespace Maui.VectorIconsSample
                         Navigation.PushAsync(new FeatherPage(iconSet));
                         break;
                     case nameof(FontAwesomeFont):
-                        Navigation.PushAsync(new Fonts.FontAwesomePage(iconSet));
+                        Navigation.PushAsync(new FontAwesomePage(iconSet));
                         break;
                     case nameof(FontAwesome5FreeFont):
                         Navigation.PushAsync(new FontAwesome5Page(iconSet));
