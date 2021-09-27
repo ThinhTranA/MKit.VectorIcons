@@ -6,6 +6,10 @@
     <Title>Maui Vector Icons for Xamarin.Forms and .NET MAUI</Title>
     <Description>7K+ icons all in one package to choose from, perfect for buttons, logos and tab bars</Description>
     <PackageTags>xamarin;xamarin.forms;mvvm;uwp;ios;android;xaml</PackageTags>
+    <Authors>Thinh Tran</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ThinhTranA/MKit.VectorIcons</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ThinhTranA/MKit.VectorIcons</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
