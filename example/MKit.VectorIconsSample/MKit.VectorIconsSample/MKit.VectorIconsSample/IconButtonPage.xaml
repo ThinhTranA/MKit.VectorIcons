@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+  x:Class="MKit.VectorIconsSample.IconButtonPage"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:antDesign="clr-namespace:MKit.VectorIcons.AntDesign;assembly=MKit.VectorIcons"
+  xmlns:feather="clr-namespace:MKit.VectorIcons.Feather;assembly=MKit.VectorIcons"
+  xmlns:fontisto="clr-namespace:MKit.VectorIcons.Fontisto;assembly=MKit.VectorIcons"
+  xmlns:vectorIconsSample="clr-namespace:MKit.VectorIconsSample;assembly=MKit.VectorIconsSample"
+  xmlns:zocial="clr-namespace:MKit.VectorIcons.Zocial;assembly=MKit.VectorIcons"
+  Title="Icon Button">
+  <ContentPage.BindingContext>
+    <vectorIconsSample:IconButtonViewModel />
+  </ContentPage.BindingContext>
+  <ContentPage.Content>
+    <StackLayout Padding="16" Spacing="20">
+      <zocial:IconButton
+        Name="Google"
+        BackgroundColor="Red"
+        HorizontalOptions="Center"
+        IconColor="White"
+        IconSize="20"
+        Text="Login with Google"
+        TextColor="White" />
+      <fontisto:IconButton
+        Name="Microsoft"
+        BackgroundColor="Blue"
+        HorizontalOptions="Center"
+        IconColor="White"
+        IconSize="20"
+        Text="Login with Microsoft"
+        TextColor="White" />
+      <antDesign:IconButton
+        Name="Github"
+        BackgroundColor="Black"
+        HorizontalOptions="Center"
+        IconColor="White"
+        IconSize="20"
+        Text="Login with Github"
+        TextColor="White" />
+
+      <antDesign:IconButton
+        Name="Mail"
+        BackgroundColor="DodgerBlue"
+        HorizontalOptions="Center"
+        IconColor="White"
+        IconPosition="Right"
+        IconSize="20"
+        Spacing="8"
+        Text="Login with Email"
+        TextColor="White" />
+
+      <StackLayout
+        HorizontalOptions="Center"
+        Orientation="Horizontal"
+        Spacing="20">
+        <antDesign:IconButton
+          Name="LinkedinSquare"
+          HorizontalOptions="Center"
+          IconColor="DodgerBlue"
+          IconSize="32" />
+
+        <antDesign:IconButton
+          Name="FacebookSquare"
+          HorizontalOptions="Center"
+          IconColor="DodgerBlue"
+          IconSize="32" />
+
+        <antDesign:IconButton
+          Name="Twitter"
+          HorizontalOptions="Center"
+          IconColor="DodgerBlue"
+          IconSize="32" />
+
+        <feather:IconButton
+          Name="Twitch"
+          HorizontalOptions="Center"
+          IconColor="Purple"
+          IconSize="32" />
+
+        <antDesign:IconButton
+          Name="Youtube"
+          HorizontalOptions="Center"
+          IconColor="Red"
+          IconSize="32" />
+      </StackLayout>
+
+      <antDesign:IconButton
+        Name="Videocamera"
+        HorizontalOptions="Center"
+        IconColor="Black"
+        IconPosition="Top"
+        IconSize="32"
+        Text="Video"
+        TextColor="Black" />
+
+      <feather:IconButton
+        Name="Image"
+        BorderColor="Gray"
+        BorderWidth="1"
+        HorizontalOptions="Center"
+        IconColor="Black"
+        IconPosition="Bottom"
+        IconSize="32"
+        Text="Image"
+        TextColor="Black" />
+      
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

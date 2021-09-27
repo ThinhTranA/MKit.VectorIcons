@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  x:Class="MKit.VectorIconsSample.IconExplorerPage"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:antDesign="clr-namespace:MKit.VectorIcons.AntDesign;assembly=MKit.VectorIcons"
+  xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+  xmlns:vectorIconsSample="clr-namespace:MKit.VectorIconsSample;assembly=MKit.VectorIconsSample"
+  Title="Icon Explorer"
+  ios:Page.UseSafeArea="true">
+  <ContentPage.BindingContext>
+    <vectorIconsSample:IconExplorerViewModel />
+  </ContentPage.BindingContext>
+
+  <ScrollView>
+    <CollectionView x:Name="CollectionView" ItemsSource="{Binding IconSets}">
+      <CollectionView.ItemTemplate>
+        <DataTemplate>
+          <Grid HeightRequest="48" HorizontalOptions="StartAndExpand">
+            <StackLayout
+              Padding="8"
+              HorizontalOptions="FillAndExpand"
+              Orientation="Horizontal"
+              VerticalOptions="CenterAndExpand">
+              <Label HorizontalOptions="StartAndExpand" Text="{Binding Name}" />
+              <Label HorizontalOptions="End" Text="{Binding Count}" />
+              <antDesign:Icon Name="Right" />
+            </StackLayout>
+            <BoxView
+              HeightRequest="1"
+              HorizontalOptions="FillAndExpand"
+              Opacity="0.3"
+              VerticalOptions="End"
+              Color="Gray" />
+            <Grid.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding Source={x:Reference CollectionView}, Path=BindingContext.ViewFontIconsCommand}" CommandParameter="{Binding .}" />
+            </Grid.GestureRecognizers>
+          </Grid>
+        </DataTemplate>
+      </CollectionView.ItemTemplate>
+    </CollectionView>
+  </ScrollView>
+
+</ContentPage>
+
+
+
+
+
+
+
+
+
+
