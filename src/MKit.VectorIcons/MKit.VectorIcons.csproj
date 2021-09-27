@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -10,6 +10,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ThinhTranA/MKit.VectorIcons</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ThinhTranA/MKit.VectorIcons</RepositoryUrl>
+    <PackageReadmeFile>NugetReadMe.md</PackageReadmeFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -45,10 +47,13 @@
     <EmbeddedResource Include="Fonts\SimpleLineIcons.ttf" />
     <None Remove="Fonts\Zocial.ttf" />
     <EmbeddedResource Include="Fonts\Zocial.ttf" />
+
+    <None Include="..\..\NugetReadMe.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
+    
   </ItemGroup>
 
 </Project>
