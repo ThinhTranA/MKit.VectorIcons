@@ -29,7 +29,7 @@ Check out included sample app in sample folder for list of all icons.
 * Install it to .NET standard project.
 
   ```csharp
-   <PackageReference Include="MKit.VectorIcons" Version="1.0.1" />
+   <PackageReference Include="MKit.VectorIcons" Version="1.0.2" />
   ```
 
 ## Usage
