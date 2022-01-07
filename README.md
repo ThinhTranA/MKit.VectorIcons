@@ -78,7 +78,7 @@ Example for `MaterialIcon` IconButton:
       TextColor="White" />
 ```
 
-# Icon Image Source
+## Icon Image Source
 ```xaml
   <Image>
       <Image.Source>
