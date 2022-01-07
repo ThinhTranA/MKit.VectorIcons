@@ -39,7 +39,6 @@
     <None Remove="Fonts\Ionicons.ttf" />
     <EmbeddedResource Include="Fonts\Ionicons.ttf" />
     <None Remove="Fonts\MaterialCommunityIcons.ttf" />
-    <EmbeddedResource Include="Fonts\MaterialCommunityIcons.ttf" />
     <None Remove="Fonts\MaterialIcons.ttf" />
     <EmbeddedResource Include="Fonts\MaterialIcons.ttf" />
     <None Remove="Fonts\Octicons.ttf" />
