@@ -1,4 +1,5 @@
 using MKit.VectorIcons;
+using MKit.VectorIcons.FontAwesome;
 using VectorIcons;
 using Xamarin.Forms;
 
@@ -10,22 +11,28 @@ namespace MKit.VectorIconsSample
         {
             var iconExplorerPage = new NavigationPage(new IconExplorerPage());
              iconExplorerPage.Title = "Icon Explorer";
-             iconExplorerPage.IconImageSource = new FontImageSource
+             iconExplorerPage.IconImageSource = new VectorIcons.FontAwesome.IconFontImageSource
              {
-                 Glyph = FontAwesomeFont.Search.ConvertToString(),
-                 FontFamily = FontFamily.FontAwesome,
+                 Name = FontAwesomeFont.Search
              };
-             
+
              var iconButtonPage = new NavigationPage(new IconButtonPage());
              iconButtonPage.Title = "Icon Button";
-             iconButtonPage.IconImageSource = new FontImageSource
+             iconButtonPage.IconImageSource = new VectorIcons.FontAwesome.IconFontImageSource
              {
-                 Glyph = FontAwesomeFont.Bold.ConvertToString(),
-                 FontFamily = FontFamily.FontAwesome,
+                 Name = FontAwesomeFont.Bold
              };
-             
+
+             var iconImageSourcePage = new NavigationPage(new IconFontImageSourcePage());
+             iconImageSourcePage.Title = "Image Source";
+             iconImageSourcePage.IconImageSource = new VectorIcons.FontAwesome.IconFontImageSource
+             {
+                 Name = FontAwesomeFont.Photo
+             };
+
              Children.Add(iconExplorerPage);
              Children.Add(iconButtonPage);
+             Children.Add(iconImageSourcePage);
         }
     }
 }
