@@ -14,7 +14,6 @@ namespace VectorIcons
         public const string Foundation = "Foundation";
         public const string Ionicons = "Ionicons";
         public const string MaterialIcons = "MaterialIcons";
-        public const string MaterialCommunityIcons = "MaterialCommunityIcons";
         public const string Octicons = "Octicons";
         public const string Zocial = "Zocial";
         public const string SimpleLineIcons = "SimpleLineIcons";

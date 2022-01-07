@@ -13,7 +13,6 @@ using Xamarin.Forms;
 [assembly: ExportFont("Foundation.ttf", Alias = FontFamily.Foundation)]
 [assembly: ExportFont("Ionicons.ttf", Alias = FontFamily.Ionicons)] 
 [assembly: ExportFont("MaterialIcons.ttf", Alias = FontFamily.MaterialIcons)] 
-[assembly: ExportFont("MaterialCommunityIcons.ttf", Alias = FontFamily.MaterialCommunityIcons)] 
 [assembly: ExportFont("Octicons.ttf", Alias = FontFamily.Octicons)]
 [assembly: ExportFont("Zocial.ttf", Alias = FontFamily.Zocial)]
 [assembly: ExportFont("SimpleLineIcons.ttf", Alias = FontFamily.SimpleLineIcons)]
