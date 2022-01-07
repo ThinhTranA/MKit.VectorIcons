@@ -49,7 +49,8 @@ Add MKit.VectorIcons Assembly Reference to `xaml` file.
 
 And use it:
 
-Example for `AntDesign` and `FontAwesome` Icon:
+## Icon Font
+Example for `AntDesign` and `FontAwesome`:
 
 ```xaml
     <antDesign:Icon
@@ -61,6 +62,8 @@ Example for `AntDesign` and `FontAwesome` Icon:
     <fontAwesome:Icon 
        Name="Automobile" />
 ```
+
+## Icon Button
 
 Example for `MaterialIcon` IconButton:
 
@@ -75,6 +78,26 @@ Example for `MaterialIcon` IconButton:
       TextColor="White" />
 ```
 
+# Icon Image Source
+```xaml
+  <Image>
+      <Image.Source>
+          <antDesign:IconFontImageSource Name="Amazon" />
+      </Image.Source>
+  </Image>
+
+  <Image>
+      <Image.Source>
+          <materialIcons:IconFontImageSource Name="Airplay" />
+      </Image.Source>
+  </Image>
+  
+  <Image>
+      <Image.Source>
+          <fontAwesome:IconFontImageSource Name="Bandcamp" />
+      </Image.Source>
+  </Image>
+```
 
 
 Both Icon & IconButton support intellisence for name of the Icon. 
